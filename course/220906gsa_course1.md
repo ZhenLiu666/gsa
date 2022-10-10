@@ -144,8 +144,8 @@
   - $\subset$：设 $A, B$ 是两个集合, 如果属于 $A$ 的元素都属于 $B$, 则说 $A$ 包含于 $B$ 或 $A$ 是 $B$ 的子集，记为 $A \subset B, A$ 包含于 $B$ 也可以说成 $B$ 包含$\boldsymbol{A}$, 而记为 $B \supset A$.对于任何集合 $A,A\supset A$ 总成立, 所以 $A$ 也是 $A$ 本身的子集.
   - 如果集合 $B \subset A, B \neq A$, 即 $B$ 是 $A$ 的子集, 但 $B$ 还不等于 $A$, 则说 $B$ 是 $A$ 的真子集.
   - $\varnothing$: 不包含任何元素的集合称为空集，空集是任何集合的子集.
-  - 定理 $1 A=B$ 的充要条件是 $A \subset B$, 且 $B \subset A$.
-  - 定理 2 如果 $A \subset B, B \subset C$, 则 $A \subset C$.
+  - 定理1  $A=B$ 的充要条件是 $A \subset B$, 且 $B \subset A$.
+  - 定理 2  如果 $A \subset B, B \subset C$, 则 $A \subset C$.
 
 - 交运算和无穷交:
 
