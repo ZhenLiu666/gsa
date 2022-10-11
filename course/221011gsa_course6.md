@@ -6,6 +6,65 @@
 
 
 
+#### 课前小测
+
+- 【题目1】设 $a_1=1, a_{n+1}=a_n+\frac{1}{a_n}$ ，
+  (a). 证明: $\lim _{n \rightarrow \infty} \frac{a_n}{\sqrt{n}}=\sqrt{2} ;$ (5 分)
+  (b). 计算: $\lim _{n \rightarrow \infty} \frac{\sqrt{n}\left(a_n-\sqrt{2 n}\right)}{\ln (n)}$. (5 分)
+  证明: (a) 显然有 $\lim _{n \rightarrow \infty} a_n=+\infty$. 因此由 Stolz 定理就有
+  $$
+  \lim _{n \rightarrow \infty} \frac{a_n^2}{n}=\lim _{n \rightarrow \infty} \frac{a_n^2-a_{n-1}^2}{n-(n-1)}=\lim _{n \rightarrow \infty}\left(2+\frac{1}{a_{n-1}^2}\right)=2
+  $$
+  所以 $\lim _{n \rightarrow \infty} \frac{a_n}{\sqrt{n}}=\sqrt{2}$.
+  (b)
+  $$
+  \begin{aligned}
+  \lim _{n \rightarrow \infty} \frac{\sqrt{n}\left(a_n-\sqrt{2 n}\right)}{\ln (n)} &=\lim _{n \rightarrow \infty} \frac{\sqrt{n}}{a_n+\sqrt{2 n}} \lim _{n \rightarrow \infty} \frac{a_n^2-2 n}{\ln (n)} \\
+  &=\frac{1}{2 \sqrt{2}} \lim _{n \rightarrow \infty} \frac{\left(a_n^2-2 n\right)-\left(a_{n-1}^2-2(n-1)\right)}{\ln (n)-\ln (n-1)} \\
+  &=\frac{1}{2 \sqrt{2}} \lim _{n \rightarrow \infty} \frac{2+\frac{1}{a_{n-1}^2}-2}{\frac{1}{n}} \\
+  &=\frac{\sqrt{2}}{8}
+  \end{aligned}
+  $$
+
+- 【题目2】计算$\lim _{n \rightarrow \infty}\left(1+\frac{1}{n^3}\right)\left(1+\frac{4}{n^3}\right) \cdots\left(1+\frac{n^2}{n^3}\right)$
+
+  解:只需注意上式是$p=2$的 令: $a_n=\ln \left[\left(1+\frac{1^p}{n^{p+1}}\right)\left(1+\frac{2^p}{n^{p+1}}\right) \cdots\left(1+\frac{n^p}{n^{p+1}}\right)\right]$, 注意到:
+  $$
+  \frac{k}{n+k}<\ln \left(1+\frac{k}{n}\right)<\frac{k}{n}
+  $$
+  就有:
+  $$
+  \begin{aligned}
+  \sum_{k=1}^n \frac{k^p}{n^{p+1}+n^p} &<\sum_{k=1}^n \frac{k^p}{n^{p+1}+k^p} \\
+  &<\sum_{k=1}^n \ln \left(1+\frac{k^p}{n^{p+1}}\right) \\
+  &<\sum_{k=1}^n \frac{k^p}{n^{p+1}}
+  \end{aligned}
+  $$
+  这样 $\lim _{n \rightarrow \infty} a_n=\frac{1}{p+1}$.
+
+- 【题目3】设函数 $f(x)$ 在点 $x=0$ 处连续, 而且 $\lim _{x \rightarrow 0} \frac{f(2 x)-f(x)}{x}=m$, 求证 $f^{\prime}(0)=m$; 
+
+  任对 $\varepsilon>0$, 存在 $\delta>0$, 当 $0 \leqslant|x|<\delta$ 时, 有:
+  $$
+  m-\varepsilon<\frac{f(2 x)-f(x)}{x}<m+\varepsilon
+  $$
+  注意 $0<\left|\frac{x}{2^n}\right|<\delta$, 有:
+  $$
+  \frac{1}{2^n}(m-\varepsilon)<\frac{f\left(\frac{x}{2^{n-1}}\right)-f\left(\frac{x}{2^n}\right)}{x}<\frac{1}{2^n}(m+\varepsilon)
+  $$
+  关于 $n$ 求和,
+  $$
+  \left(1-\frac{1}{2^n}\right)(m-\varepsilon)<\frac{f(x)-f\left(\frac{x}{2^n}\right)}{x}<\left(1-\frac{1}{2^n}\right)(m+\varepsilon)
+  $$
+  令 $n \rightarrow+\infty$, 有:
+  $$
+  m-\varepsilon \leqslant \frac{f(x)-f(0)}{x} \leqslant m+\varepsilon
+  $$
+
+
+
+
+
 #### 6.1  不定积分
 
 - 原函数
@@ -76,13 +135,13 @@
   - 求序列极限$\lim _{n \rightarrow \infty} \sum_{i=1}^n \frac{\sqrt{i}}{n \sqrt{n}} .$
   -  求序列极限$\lim _{n \rightarrow \infty} \sum_{i=1}^n \frac{\sqrt{i}}{n \sqrt{n}} \cos \left(\frac{\sqrt{i}}{n} \sin (n)\right) \text {. }$
 
+（见板书：第一问化简成积分的定义，第二问利用放缩$1\leq i \leq n$，再分别求极限即可）
 
 
 
 
 
-
-#### 6.2  定积分可积性
+#### 6.3  定积分可积性
 
 - **必要条件**： $[a, b]$ 上的可积函数是有界的.事实上有界函数未必可积.例. 狄利克雷函数在 $[0,1]$ 上不可积.
 
@@ -145,7 +204,7 @@ $$
 
 
 
-#### 6.3  定积分的性质
+#### 6.4  定积分的性质
 
 - 积分的性质：
 
@@ -159,7 +218,7 @@ $$
     - 【推论】设 $f(x)$ 在 $[a, b]$ 上可积, 则$\left|\int_a^b f(x) \mathrm{d} x\right| \leq \int_a^b|f(x)| \mathrm{d} x .$
     - 【推论】设 $f(x)$ 在 $[a, b]$ 上可积, $M$ 和 $m$ 分别是 $f(x)$ 在 $[a, b]$ 上的上界和下界, 则$m(b-a) \leq \int_a^b f(x) \mathrm{d} x \leq M(b-a)$；
 
-  - 乘法性质：设函数 $f(x), g(x)$ 呠在 $[a, b]$ 上可积, 则 $f(x) \cdot g(x)$ 也在 $[a, b]$ 上 可积.
+  - 乘法性质：设函数 $f(x), g(x)$ 都在 $[a, b]$ 上可积, 则 $f(x) \cdot g(x)$ 也在 $[a, b]$ 上 可积.
     【例题】 因为 $f(x)$ 和 $g(x)$ 都在 $[a, b]$ 上可积, 故都在 $[a, b]$ 上有界, 即有正数 $M$, 使得 $|f(x)| \leq M,|g(x)| \leq M$. 对于 $[a, b]$ 的任意分划 $T=\left\{x_k\right\}_{0 \leq k \leq n}$, 任取两 点 $x^{\prime}, x^{\prime \prime} \in\left[x_{k-1}, x_k\right]$, 我们有
     $$
     \begin{aligned}

@@ -6,6 +6,9 @@
   - [数列极限二](course/220920gsa_course3)
   - [函数极限与连续](course/220927gsa_course4)
   - [函数导数与微分](course/221004gsa_course5)
+  - [定积分基础](course/221011gsa_course6)
 
-- 高等数学A_chenw
+- 课外延伸
+  - 暂无
+
 
