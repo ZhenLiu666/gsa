@@ -7,8 +7,8 @@
   - [函数极限与连续](course/220927gsa_course4)
   - [函数导数与微分](course/221004gsa_course5)
   - [定积分基础](course/221011gsa_course6)
-
+  - [微积分基本定理](course/221018gsa_course7)
+  - [不定积分定积分计算](course/221025gsa_course8)
 - 课外延伸
   - 暂无
-
 
