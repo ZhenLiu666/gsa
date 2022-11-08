@@ -78,9 +78,8 @@
   $$
   这是关于 $k$ 的方程, 注意到 $f^{\prime}(\xi)$ 在点 $\frac{a+\xi}{2}$ 处的 Taylor 公式:
   $$
-  f^{\prime}(\xi)=f^{\prime}\left(\frac{a+\xi}{2}\right)+f^{\prime \prime}\left(\frac{a+\xi}{2}\right) \frac{(\xi-a)}{2}+\frac{1}{2} f^{\prime \prime \prime}(c)\left(\frac{\xi-a}{2}\right)^2,(6)
+  f^{\prime}(\xi)=f^{\prime}\left(\frac{a+\xi}{2}\right)+f^{\prime \prime}\left(\frac{a+\xi}{2}\right) \frac{(\xi-a)}{2}+\frac{1}{2} f^{\prime \prime \prime}(c)\left(\frac{\xi-a}{2}\right)^2
   $$
-  其中 $c \in(a, b)$. 比较 (5)、(6) 可得式(3). 证毕.
 
 - 【例题：证明不等式】设 $f(x)$ 在 $[a, b]$ 上二次可铰, $f^{\prime \prime}(x)<0$. 试证: $\forall a$ $\leqslant x_1<x_2<\cdots<x_n \leqslant b, k_i \geqslant 0, \sum_{i=1}^n k_i=1$, 有$f\left(\sum_{i=1}^n k_i x_i\right)>\sum_{i=1}^n k_i f\left(x_i\right) .$
 
@@ -135,7 +134,7 @@
   $$
   $\forall \varepsilon>0$, 首先可取 $h>0$ 充分小, 使得 $\frac{1}{2} M h^2<\frac{\varepsilon}{2}$. 然后将 $h$ 固定. 因 $\lim _{x \rightarrow+\infty} \varphi(x)=A$, 所以 $\exists \Delta>0$, 当 $x>\Delta$ 时
   $$
-  \frac{1}{h}(|\varphi(x+h)-A|+|A-\varphi(x)|)<-\frac{E}{2} .
+  \frac{1}{h}(|\varphi(x+h)-A|+|A-\varphi(x)|)<\frac{\varepsilon}{2} .
   $$
   从而可以得 $\quad | \varphi^{\prime}(x) \mid<\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon$.
 
@@ -238,8 +237,7 @@ $$
 - 不等式的证明方法
 
   - 【例题：单调性】证明 $\frac{|a+b|}{1+|a+b|} \leqslant \frac{|a|}{1+|a|}+\frac{|b|}{1+|b|}$.
-    证 记 $f(x)=\frac{x}{1+x}$, 则 $f^{\prime}(x)=\frac{1}{(1+x)^2}>0, f(x)=\frac{x}{1+x}$
-    $\nearrow$.
+    证 记 $f(x)=\frac{x}{1+x}$, 则 $f^{\prime}(x)=\frac{1}{(1+x)^2}>0, f(x)=\frac{x}{1+x}$$\nearrow$.
     于是由 $|a+b| \leqslant|a|+|b|$ 知
     $$
     \begin{aligned}
@@ -270,7 +268,7 @@ $$
 
 
 
-#### 期末试题讲解
+#### 期中试题讲解
 
 三、设 $a_1=\sqrt{2}, a_2=\sqrt{2}^{\sqrt{2}}, a_3=\sqrt{2}^{\sqrt{2} \sqrt{2}}, a_{n+1}=\sqrt{2}^{a_n}(n=1,2,3, \ldots)$. 试问此数列当 $n \rightarrow+\infty$ 时是否有极限? 若有, 求之; 若无, 为何?
 
