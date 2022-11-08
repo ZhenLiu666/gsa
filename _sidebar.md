@@ -9,6 +9,8 @@
   - [定积分基础](course/221011gsa_course6)
   - [微积分基本定理](course/221018gsa_course7)
   - [不定积分定积分计算](course/221025gsa_course8)
+  - [微分中值定理](course/221101gsa_course9)
+  - [Taylor公式](course/221108gsa_course10)
 - 课外延伸
   - 暂无
 
