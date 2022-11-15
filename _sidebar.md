@@ -11,6 +11,7 @@
   - [不定积分定积分计算](course/221025gsa_course8)
   - [微分中值定理](course/221101gsa_course9)
   - [Taylor公式](course/221108gsa_course10)
+  - [函数性质与作图](course/221115gsa_course11)
 - 课外延伸
   - 暂无
 
