@@ -14,6 +14,8 @@
   - [函数性质与作图](course/221115gsa_course11)
   - [函数凹凸性](course/221122gsa_course12)
   - [多元函数极限](course/221129gsa_course13)
+  - [偏微分与全微分](course/221206gsa_course14)
+  - [方向导数与隐函数定理](course/221213gsa_course15)
 - 课外延伸
   - 暂无
 
